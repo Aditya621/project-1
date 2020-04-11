@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Registration
+    </title>
+</head>
+<style>
+
+    
+.btn1 {
+    height: 100%;
+	width: 100%;
+	background-image:url('images/wb.jpg');
+	background-position: center;
+	background-size: cover;
+
+        font-family: 'Baloo 2', cursive;
+        margin: 17px 9px;
+        background-color: transparent;
+        padding: 95px 40px;
+        border: 2px solid white;
+        font-size: 22px;
+        color: aliceblue;
+        border-radius: 20px;
+        text-align: center;
+                
+    }
+    .btn{
+        border-radius: 15px;
+        text-decoration:solid ;
+     cursor: pointer;
+     font-size: 20px;
+    }
+    .btn:hover {
+        background-color: rgb(230, 223, 223);
+    }
+</style>
+<script type="text/javascript">
+function validate(){
+    alert("submit the record successfully thanku!!");
+}
+
+</script>
+<body>
+    <form action="action_page.php" method="post" class="btn1">
+        <label >Registration number :</label><br>
+        <input class="btn" type="text" placeholder="Enter here"></input><br>
+        <label>Branch</label><br>
+        <input  class="btn" type="text" placeholder="Enter here"></input><br>
+        <label>year :</label><br>
+        <input class="btn" type="Number" placeholder="Year"></input><br>
+        <label>Payment :</label><br>
+        <input class="btn" type="Number" placeholder="Enter Payment"></input><br>
+        <label>Request Status ID</label><br>
+        <input class="btn" type="text" placeholder="Enter here"></input><br>
+    <br>
+    <form method="POST"  onsubmit="return validate()">
+        <input  type ="submit" class="btn" value="submit">
+    </form>
+    </form>
+</body>
+
+</html>

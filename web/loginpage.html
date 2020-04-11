@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<style>
+		*{
+		margin : 0;
+		padding:0;
+		font-family: sans-serif;
+	}
+	.hero{
+		height: 100%;
+		width: 100%;
+		background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('images/hostelimage.jpeg');
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+	
+	}
+	.form-box{
+		width: 380px;
+		height: 480px;
+		position: relative;
+		margin: 6% auto;
+		background:  rgb(255, 246, 246);
+		padding: 5px;
+		overflow: hidden;
+	}
+	.button-box
+	{
+		width:220px;
+		margin: 35px auto;
+		position: relative;
+		box-shadow: 0 0 20px 9px #794a381f;
+		border-radius: 30px;
+	}
+	.toggle
+	{
+		padding: 10px 30px;
+		cursor: pointer;
+		background:transparent;
+		border:0;
+		outline: none;
+		position:relative;
+	}
+	#btn
+	{
+		top:0;
+		left:0;
+		position:absolute;
+		width:110px;
+		height:100%;
+		background:linear-gradient(to right,#ff10105f,#ffad06);
+		border-radius: 30px;
+		transition: .5s;
+	}
+	
+	.social-icons
+	{
+		margin: 30px auto;
+		text-align:center;
+	}
+	.social-icons img
+	{
+		width: 30px;
+		margin: 0 12px;
+		box-shadow: 0 0 20px 0 #7f7f7f3d;
+		cursor: pointer;
+		border-radius: 50px;
+	}
+	.input
+	{
+		top: 180px;
+		position: absolute;
+		width: 280px;
+		transition: .5s;
+	
+	}
+	.inputf
+	{
+		width: 100%;
+		padding: 10px 0;
+		margin: 5px 0;
+		border-left: 0;
+		border-top: 0;
+		border-right: 0;
+		border-bottom: 1px solid #999;
+		outline:none;
+		background:transparent;
+	}
+	.submit{
+		width: 85%;
+		padding: 10px 30px;
+		cursor:pointer;
+		display: block;
+		margin: auto;
+		background:linear-gradient(to right,#ff10105f,#ffad06);
+		border:0;
+		outline: none;
+		border-radius: 30px;
+	
+	}
+	.checkbox
+	{
+		margin: 30px 10px 38px 0;
+	}
+	span
+	{
+		color: #777;
+		font-size: 12px;
+		bottom: 68px;
+		position: absolute;
+	}
+	
+	#login
+	{
+		left: 50px;
+	}
+	#register
+	{
+		left: 450px;
+	}
+	.content
+	{
+		margin-top:20px;
+		margin-bottom: 20px;  
+	}
+	h3
+	{
+		font-weight: bold;
+		margin-left:100px; 
+	}
+	
+	ul,li{
+		font-size: 15px;
+		margin-left: 50px;
+	}
+	table,th,td {
+		border: 1px solid black;
+		background-color: #D3D3D3;
+		margin:auto;
+	
+	}
+	th,td{
+		padding: 10px;
+	}
+	h2
+	{
+	
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+	h1
+	{
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	</style>
+	<script type="text/javascript">
+function abc()
+{
+    alert(" your submittion is recorded")
+}
+function abc1()
+{
+    alert(" your registration is completed")
+}
+	</script>
+	<body>
+		<div class="hero">
+			<div class="form-box">
+				<div class="button-box">
+					<div id="btn"></div>
+					<button type="button" class="toggle" onclick="login()">log In</button>
+					<button type="button" class="toggle" onclick="register()">Register</button>
+
+				</div>
+					<div class="social-icons">
+				<img src="images/fb.png">
+				<img src="images/tw.png">
+				<img src="images/gp.png">
+			</div>
+			<form class="input" id="login">
+				<input type="text" class="inputf" placeholder="User Id" required>
+				<input type="text" class="inputf" placeholder="Enter Password" required>
+				<input type="checkbox" class="checkbox"><span>Remember Password</span>
+				<button type="submit" class="submit" onclick="abc()">Log in</button>
+			</form>
+			<form class="input" id="register">
+				<input type="text" class="inputf" placeholder="User Id" required>
+				<input type="text" class="inputf" placeholder="Email Id" required>
+				<input type="text" class="inputf" placeholder="Enter Password" required>
+				<input type="checkbox" class="checkbox"><span>I agree to the Terms & condition</span>
+				<button type="submit" class="submit" onclick="abc1()">Register</button>
+			</form>
+			</div>
+			
+		</div>
+		<script >
+			var x= document.getElementById("login");
+			var y= document.getElementById("register");
+			var z= document.getElementById("btn");
+
+			function register()
+			{
+                x.style.left="-400px";
+				y.style.left="50px";
+				z.style.left="110px";
+			}
+
+			function login()
+			{
+                x.style.left="50px";
+				y.style.left="450px";
+				z.style.left="0px";
+			}
+		</script>
+	</body>
+</html>
